@@ -1,0 +1,14 @@
+$toolbar-height: 54px;
+
+mat-toolbar {
+    position: relative;
+    z-index: 10;
+    height: $toolbar-height;
+}
+mat-drawer-container {
+    height: calc(100vh - #{$toolbar-height});
+    mat-drawer {
+        width: 240px;
+        border: none;
+    }
+}

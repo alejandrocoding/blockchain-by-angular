@@ -1,0 +1,17 @@
+<mat-toolbar class="mat-elevation-z12" color="primary">
+  <button mat-icon-button aria-label="Toggle sidebar menu" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Blockchain by Angular</span>
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer [mode]="mode" [opened]="isOpen">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <main>
+      <app-dashboard></app-dashboard>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>

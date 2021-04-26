@@ -1,0 +1,24 @@
+@import "~@angular/material/theming";
+
+main {
+    padding: 50px 16px;
+    .project {
+        margin-bottom: 50px;
+        @include mat-elevation(8);
+        @include mat-elevation-transition;
+
+        &:hover {
+            @include mat-elevation(12);
+        }
+        .avatar {
+            background-size: cover;
+        }
+    }
+    .mat-card-content {
+        padding-bottom: 36px;
+    }
+    .mat-card-actions {
+        position: absolute;
+        bottom: 16px;
+    }
+}

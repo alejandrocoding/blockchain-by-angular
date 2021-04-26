@@ -1,0 +1,16 @@
+<main fxLayout="row wrap" fxLayoutAlign="space-around">
+  <mat-card class="project mat-elevation-z8" fxFlex="42.5" fxFlex.lt-md="80" *ngFor="let project of projects">
+    <mat-card-header>
+      <div class="avatar" mat-card-avatar [style.background-image]="'url(' + project.avatar + ')'"></div>
+      <mat-card-title>{{ project.name }}</mat-card-title>
+      <mat-card-subtitle>{{ project.category }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="'/assets/images/' + project.image" alt="Image of {{ project.name }} site" />
+    <mat-card-content>
+      <p>{{ project.description }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="openURL(project.url)">SEE MORE</button>
+    </mat-card-actions>
+  </mat-card>
+</main>

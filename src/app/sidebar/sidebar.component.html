@@ -1,0 +1,30 @@
+<form [formGroup]="form" fxFill>
+  <main fxLayout="column wrap" fxFill fxLayoutGap="16px">
+    <span class="subtitle">Search by name</span>
+    <input
+      formControlName="search"
+      type="text"
+      class="search mat-elevation-z12"
+      placeholder="Search..."
+      aria-label="Search by name"
+    />
+
+    <mat-divider></mat-divider>
+
+    <span class="subtitle">Filter by category</span>
+    <mat-chip-list aria-label="Filter by category" formArrayName="categories">
+      <mat-chip
+        fxFlex="100"
+        *ngFor="let category of categories.controls; let i = index"
+        (click)="onCategoryFilterSelection(i)"
+        [class.mat-chip-selected]="category.value.selected"
+        [selected]="category.value.selected"
+        [color]="category.value.selected ? 'primary' : null"
+      >
+        {{ category.value.name }}
+      </mat-chip>
+    </mat-chip-list>
+
+    <button class="remove-filters" mat-raised-button color="primary" (click)="removeFilters()">REMOVE FILTERS</button>
+  </main>
+</form>

@@ -1,0 +1,29 @@
+{
+    "filters": [
+        {
+            "id": "10",
+            "name": "Blockchain",
+            "selected": false
+        },
+        {
+            "id": "20",
+            "name": "Crypto & Tokens",
+            "selected": false
+        },
+        {
+            "id": "30",
+            "name": "Wallets",
+            "selected": false
+        },
+        {
+            "id": "40",
+            "name": "DApps",
+            "selected": false
+        },
+        {
+            "id": "50",
+            "name": "Others",
+            "selected": false
+        }
+    ]
+}

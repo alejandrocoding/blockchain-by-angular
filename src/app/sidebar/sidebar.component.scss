@@ -1,0 +1,36 @@
+@import "~@angular/material/theming";
+
+main {
+    padding: 24px 16px;
+
+    .search {
+        line-height: 2.5em;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 16px;
+        border: none;
+        opacity: 0.9;
+        @include mat-elevation(4);
+        @include mat-elevation-transition;
+
+        &:hover {
+            @include mat-elevation(12);
+        }
+        &:active {
+            @include mat-elevation(8);
+        }
+    }
+    mat-chip {
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .subtitle {
+        margin-bottom: 5px !important;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        opacity: 0.5;
+    }
+    .remove-filters {
+        margin-top: auto;
+    }
+}

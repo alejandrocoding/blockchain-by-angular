@@ -1,0 +1,31 @@
+{
+   "projects": [
+      {
+         "name": "Kukai",
+         "categoryId": "30",
+         "category": "Wallets",
+         "description": "Kukai is a Tezos web wallet based on three principles: Security, Community and Reliability.",
+         "image": "kukai.jpg",
+         "avatar": "https://avatars.githubusercontent.com/u/39590892?s=200&v=4",
+         "url": "https://wallet.kukai.app/"
+      },
+      {
+         "name": "BitClout",
+         "categoryId": "40",
+         "category": "DApps",
+         "description": "BitClout is a decentralized alternative to Twitter, built on a new Proof-of-Work blockchain, with the aim of creating an open source social media platform.",
+         "image": "bitclout.jpg",
+         "avatar": "https://avatars.githubusercontent.com/u/72720753?s=200&v=4",
+         "url": "https://bitclout.com/"
+      },
+      {
+         "name": "1inch Network",
+         "categoryId": "40",
+         "category": "DApps",
+         "description": "A distributed network for decentralized protocols on #Ethereum and #BSC enabling the most lucrative, fastest and protected operations in #DeFi.",
+         "image": "1inch.jpg",
+         "avatar": "https://avatars.githubusercontent.com/u/43341157?s=200&v=4",
+         "url": "https://1inch.io/"
+      }
+   ]
+}
